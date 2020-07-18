@@ -23,8 +23,8 @@ void ofApp::setup(){
 			fun.setPosition(ofVec2f(ofRandom(ofGetWidth()), ofRandom(ofGetHeight())));
 			ofVec2f heading = ofVec2f(((i % 1) * 7) + 1, 0);
 			//ofVec2f heading = ofVec2f(((i % 2 * 5) + 1), 0);
-			float lookup_dist = (i % 2) * 8 + 1;
-			if (j % 2 == 1) lookup_dist *= -0.3;
+			float lookup_dist = (i % 1) * 8 + 1;
+			//if (j % 5 == 1) lookup_dist *= -0.3;
 			fun.setLookupDistance(lookup_dist);
 			heading.rotate(ofRandom(360));
 			fun.setHeading(heading);
@@ -57,7 +57,7 @@ void ofApp::draw(){
 
 		fb_fbo[i].begin();
 		ofPushStyle();
-		ofSetColor(0, 0, 0, 9);
+		ofSetColor(0, 0, 0, 3);
 		ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
 		ofPopStyle();
 

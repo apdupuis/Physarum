@@ -25,6 +25,6 @@ class ofApp : public ofBaseApp{
 		std::vector<ofFbo> fb_fbo;
 		std::vector<ofPixels> fb_pix;
 		std::vector<std::vector<Fungi>> fun_guys;
-		int num_systems = 2;
-		int num_fun_guys = 7000;
+		int num_systems = 1;
+		int num_fun_guys = 14000;
 };
